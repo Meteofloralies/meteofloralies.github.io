@@ -1,8 +1,0 @@
-.cligne2 {
-animation: cligne2 2s infinite;
-}
-@keyframes cligne2 {
-0% { opacity:0; }
-50% { opacity:1; }
-100% { opacity:0; }
-}
