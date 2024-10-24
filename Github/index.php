@@ -93,7 +93,7 @@ background-color:rgb(0, 51, 153);
   
   <script type="text/javascript" id="__gaOptOutExtension">window["_gaUserPrefs"] = { ioo : function() { return true; } }</script>
   
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" _base_href="http://meteofloralies.free.fr/">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" _base_href="https://meteofloralies.github.io">
 
   
   <style _base_href="https://meteofloralies.github.io">
@@ -128,10 +128,10 @@ En
 direct&nbsp; &nbsp;<small><small>&nbsp;</small></small>&nbsp; &nbsp; Mobile &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; Mairie&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; La Terrière
  </div>
 
-<div style="text-align: center;"><a href="https://pv.viewsurf.com/2094/La-Tranche-sur-mer-Embarcadere?i=NzYxMDp1bmRlZmluZWQ" _base_href="http://meteofloralies.free.fr/"><img style="border: 0px solid ; width: 36px; height: 37px;" alt="Embarcadère" src="/Icones/Webcam.png" _base_href="http://meteofloralies.free.fr/"></a>&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;  <a href="https://www.wunderground.com/dashboard/pws/ILATRA19/table/2020-00-8/2020-00-8/daily" _base_href="http://meteofloralies.free.fr/"><img style="border: 0px solid ; width: 50px; height: 36px;" alt="En direct" src="Icones/HP2550.jpg" _base_href="http://meteofloralies.free.fr/"></a> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<a href="/2024/Octobre/Mobile.html"><img style="border: 0px solid ; width: 34px; height: 61px;" alt="Mobile" src="Icones/Capture_Mobile.png"></a>
-&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<a href="https://www.latranchesurmer.fr/" _base_href="http://meteofloralies.free.fr/"><img style="border: 0px solid ; width: 40px; height: 36px;" alt="La Tranche" src="Icones/La_Tranche.JPG" _base_href="http://meteofloralies.free.fr/"></a>&nbsp;&nbsp;
-&nbsp; &nbsp; &nbsp; <a href="https://pv.viewsurf.com/2010/La-Tranche-sur-mer-Plage-de-la-Terriere?i=NzM2NDp1bmRlZmluZWQ" _base_href="http://meteofloralies.free.fr/"><img style="border: 0px solid ; width: 36px; height: 37px;" alt="Terrière" src="/Icones/Webcam.png" _base_href="http://meteofloralies.free.fr/"></a><br>
+<div style="text-align: center;"><a href="https://pv.viewsurf.com/2094/La-Tranche-sur-mer-Embarcadere?i=NzYxMDp1bmRlZmluZWQ" _base_href="https://meteofloralies.github.io"><img style="border: 0px solid ; width: 36px; height: 37px;" alt="Embarcadère" src="/Icones/Webcam.png" _base_href="http://meteofloralies.free.fr/"></a>&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;  <a href="https://www.wunderground.com/dashboard/pws/ILATRA19/table/2020-00-8/2020-00-8/daily" _base_href="https://meteofloralies.github.io"><img style="border: 0px solid ; width: 50px; height: 36px;" alt="En direct" src="Icones/HP2550.jpg" _base_href="http://meteofloralies.free.fr/"></a> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<a href="/2024/Octobre/Mobile.html"><img style="border: 0px solid ; width: 34px; height: 61px;" alt="Mobile" src="Icones/Capture_Mobile.png"></a>
+&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<a href="https://www.latranchesurmer.fr/" _base_href="https://meteofloralies.github.io"><img style="border: 0px solid ; width: 40px; height: 36px;" alt="La Tranche" src="Icones/La_Tranche.JPG" _base_href="http://meteofloralies.free.fr/"></a>&nbsp;&nbsp;
+&nbsp; &nbsp; &nbsp; <a href="https://pv.viewsurf.com/2010/La-Tranche-sur-mer-Plage-de-la-Terriere?i=NzM2NDp1bmRlZmluZWQ" _base_href="https://meteofloralies.github.io"><img style="border: 0px solid ; width: 36px; height: 37px;" alt="Terrière" src="/Icones/Webcam.png" _base_href="http://meteofloralies.free.fr/"></a><br>
 <div style="text-align: center;">&nbsp;Mise en page pour téléphone mobile<br>
 <br>
 
@@ -156,7 +156,7 @@ de journée</span></div>
 
 </div>
 
-<div style="text-align: center;">&nbsp;&nbsp; <img src="Photos/Embarcadere.JPG" alt="Embarcadère" style="width: 265px; height: 150px;" _base_href="http://meteofloralies.free.fr/">&nbsp;&nbsp;
+<div style="text-align: center;">&nbsp;&nbsp; <img src="Photos/Embarcadere.JPG" alt="Embarcadère" style="width: 265px; height: 150px;" _base_href="https://meteofloralies.github.io">&nbsp;&nbsp;
 <img alt="Dune" src="/Photos/Bute.jpg" style="width: 265px; height: 150px;" _base_href="https://meteofloralies.github.io">&nbsp;&nbsp; <img style="width: 265px; height: 149px;" src="Photos/Canyon.jpg" alt="Canyon" _base_href="http://meteofloralies.free.fr/">&nbsp;&nbsp; <img src="/Photos/Mer.jpg" alt="Mer" style="width: 265px; height: 152px;">&nbsp;&nbsp;  <img style="width: 265px; height: 150px;" alt="Dune au loin" src="/Photos/Dune_au_loin.jpg">&nbsp; &nbsp;
 </div>
 
