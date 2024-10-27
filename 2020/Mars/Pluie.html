@@ -1,0 +1,446 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+  
+  <meta charset="UTF-8"><title>Tableau Pluie Mars 2020</title>
+  
+
+  
+  
+  <style type="text/css">
+      body {
+         margin: 0px 0px 0px 0px;
+         color: #000000;
+         background-color: #003399;
+      }
+      img {
+         border-style: none;
+         border-width: 0px 0px 0px 0px;
+      }
+      a {
+         color: #0000ee;
+         text-decoration: underline;
+      }
+      a:link {
+         color: #0000ee;
+      }
+      a:visited {
+         color: #551a8b;
+      }
+      a:hover {
+         color: #eeee00;
+         cursor: pointer;
+      }
+      a:active {
+         color: #ee0000;
+      }
+      div.bubble {
+         padding: 0px 4px 4px 4px;
+         position: absolute;
+         top: 0px;
+         left: 0px;
+         background-color: #FFFFAA;
+         border-style: solid;
+         border-width: 1px 1px 1px 1px;
+         border-color: #000000;
+      }
+   </style>
+  
+  <script type="text/javascript">
+function coords() { //cette fonction définit les coordonnées des cellules à annoter ainsi que le contenu de leur annotation
+var firstWeekLength = 3; //on définit le nombre de jours dans la première semaine du mois
+var datas = { //on définit le texte à afficher pour chaque cellule
+
+/* ---1er jour--- */
+'cell_R01C03': '',
+'cell_R01C04': '',
+'cell_R01C05': '',
+'cell_R01C06': '',
+/* ---2ème jour--- */
+'cell_R02C03': '',
+'cell_R02C04': '',
+'cell_R02C05': '',
+'cell_R02C06': '',
+/* ---3ème jour--- */
+'cell_R03C03': '',
+'cell_R03C04': '',
+'cell_R03C05': '',
+'cell_R03C06': '',
+/* ---4ème jour--- */
+'cell_R04C03': '',
+'cell_R04C04': '',
+'cell_R04C05': '',
+'cell_R04C06': '',
+/* ---5ème jour--- */
+'cell_R05C03': '',
+'cell_R05C04': '',
+'cell_R05C05': '',
+'cell_R05C06': '',
+/* ---6ème jour--- */
+'cell_R06C03': '',
+'cell_R06C04': '',
+'cell_R06C05': '',
+'cell_R06C06': '',
+/* ---7ème jour--- */
+'cell_R07C03': '',
+'cell_R07C04': '',
+'cell_R07C05': '',
+'cell_R07C06': '',
+/* ---8ème jour--- */
+'cell_R08C03': '',
+'cell_R08C04': '',
+'cell_R08C05': '',
+'cell_R08C06': '',
+/* ---9ème jour--- */
+'cell_R09C03': '',
+'cell_R09C04': '',
+'cell_R09C05': '',
+'cell_R09C06': '',
+/* ---10ème jour--- */
+'cell_R10C03': '',
+'cell_R10C04': '',
+'cell_R10C05': '',
+'cell_R10C06': '',
+/* ---11ème jour--- */
+'cell_R11C03': '',
+'cell_R11C04': '',
+'cell_R11C05': '',
+'cell_R11C06': '',
+/* ---12ème jour--- */
+'cell_R12C03': '',
+'cell_R12C04': '',
+'cell_R12C05': '',
+'cell_R12C06': '',
+/* ---13ème jour--- */
+'cell_R13C03': '',
+'cell_R13C04': '',
+'cell_R13C05': '',
+'cell_R13C06': '',
+/* ---14ème jour--- */
+'cell_R14C03': '',
+'cell_R14C04': '',
+'cell_R14C05': '',
+'cell_R14C06': '',
+/* ---15ème jour--- */
+'cell_R15C03': '',
+'cell_R15C04': '',
+'cell_R15C05': '',
+'cell_R15C06': '',
+/* ---16ème jour--- */
+'cell_R16C03': '',
+'cell_R16C04': '',
+'cell_R16C05': '',
+'cell_R16C06': '',
+/* ---17ème jour--- */
+'cell_R17C03': '',
+'cell_R17C04': '',
+'cell_R17C05': '',
+'cell_R17C06': '',
+/* ---18ème jour--- */
+'cell_R18C03': '',
+'cell_R18C04': '',
+'cell_R18C05': '',
+'cell_R18C06': '',
+/* ---19ème jour--- */
+'cell_R19C03': '',
+'cell_R19C04': '',
+'cell_R19C05': '',
+'cell_R19C06': '',
+/* ---20ème jour--- */
+'cell_R20C03': '',
+'cell_R20C04': '',
+'cell_R20C05': '',
+'cell_R20C06': '',
+/* ---21ème jour--- */
+'cell_R21C03': '',
+'cell_R21C04': '',
+'cell_R21C05': '',
+'cell_R21C06': '',
+/* ---22ème jour--- */
+'cell_R22C03': '',
+'cell_R22C04': '',
+'cell_R22C05': '',
+'cell_R22C06': '',
+/* ---23ème jour--- */
+'cell_R23C03': '',
+'cell_R23C04': '',
+'cell_R23C05': '',
+'cell_R23C06': '',
+/* ---24ème jour--- */
+'cell_R24C03': '',
+'cell_R24C04': '',
+'cell_R24C05': '',
+'cell_R24C06': '',
+/* ---25ème jour--- */
+'cell_R25C03': '',
+'cell_R25C04': '',
+'cell_R25C05': '',
+'cell_R25C06': '',
+/* ---26ème jour--- */
+'cell_R26C03': '',
+'cell_R26C04': '',
+'cell_R26C05': '',
+'cell_R26C06': '',
+/* ---27ème jour--- */
+'cell_R27C03': '',
+'cell_R27C04': '',
+'cell_R27C05': '',
+'cell_R27C06': '',
+/* ---28ème jour--- */
+'cell_R28C03': '',
+'cell_R28C04': '',
+'cell_R28C05': '',
+'cell_R28C06': '',
+/* ---29ème jour--- */
+'cell_R29C03': '',
+'cell_R29C04': '',
+'cell_R29C05': '',
+'cell_R29C06': '',
+/* ---30ème jour--- */
+'cell_R30C03': '',
+'cell_R30C04': '',
+'cell_R30C05': '',
+'cell_R30C06': '',
+/* ---31ème jour--- */
+'cell_R31C03': '',
+'cell_R31C04': '',
+'cell_R31C05': '',
+'cell_R31C06': ''
+};
+var areas = document.getElementsByTagName('area'); //on récupère toutes les cellules annotées
+var width = 90; //largeur d'une cellule
+var height = 36; //hauteur d'une cellule
+var paddingX = 7; //écart horizontal entre deux cellules
+var paddingY = 7; //écart vertical entre deux cellules
+for (var el of areas) { //pour chaque cellule
+var elid = el.id; //on récupère son id qui contient ses coordonnées sous la forme Ligne puis Colonne
+el.setAttribute('data-descr', datas[elid]); //on ajoute le texte à afficher en faisant la correspondance entre le tableau de données et l'id de la cellule
+var regex = /\d+/g; //expression régulière pour extraire les nombres contenus dans l'id de notre cellule
+var arr = elid.match(regex); //on parse l'id selon notre expression régulière
+if (arr.length > 1) { //si deux nombres sont bien trouvés (i.e. les coordonnées) car sait-on jamais peut-être que la personne n'est pas capable d'écrire correctement l'id dans le DOM HTML...
+var row = parseInt(arr[0], 10); //on convertit la chaîne de caractères correspondants au numéro de ligne en type entier naturel
+var col = parseInt(arr[1], 10); //on convertit la chaîne de caractères correspondants au numéro de colonne en type entier naturel
+var offsetX = 146; //on définit le décélage horizontale de la première cellule par rapport à gauche de l'image
+if (row < (firstWeekLength + 1)) { //on définit les décalages verticaux entre les semaines par rapport au haut de l'image, ici S1
+var offsetY = 152;
+} else if (row < ( 7 * 1 + firstWeekLength + 1)) { //ici S2
+var offsetY = 152 + 29;
+} else if (row < ( 7 * 2 + firstWeekLength + 1)) { //ici S3
+var offsetY = 152 + 29 * 2;
+} else if (row < ( 7 * 3 + firstWeekLength + 1)) { //ici S4
+var offsetY = 152 + 29 * 3;
+} else if (row < ( 7 * 4 + firstWeekLength + 1)) { //ici S5, pas envie de gérer les cas avec des mois contenant moins de 31 jours mais ça ne devrait pas poser de problème si le document est écrit correctement...
+var offsetY = 152 + 29 * 4;
+} else { //sait-on jamais que la personne n'est pas capable d'écrire correctement l'id dans le DOM HTML ou ne sait pas qu'il ne peut y avoir plus de 31 jours dans un mois...
+return null;
+}
+var x0 = offsetX + (col - 1) * (width + paddingX); //coordonnées horizontales du coin supérieur gauche de la cellule
+var x1 = x0 + width; //coordonnées horizontales du coin inférieur droit de la cellule
+var y0 = offsetY + (row - 1) * (height + paddingY); //coordonnées varticales du coin supérieur gauche de la cellule
+var y1 = y0 + height; //coordonnées varticales du coin inférieur droit de la cellule
+el.setAttribute("coords", x0 + "," + y0 + "," + x1 + "," + y1); //zou on ajoute les coordonnées à la cellule
+}
+}
+}
+function bubblein(el) { //cette fonction crée une bulle d'annotation avec son annotation à partir de l'élément déclenchant l'évènement (i.e. "mouseOver" )
+var div = document.createElement('div'); //création d'une div pour contenir l'annotation
+div.setAttribute('class', 'bubble'); //on lui ajoute la classe CSS "bubble"
+div.setAttribute('id', el.id + '_bubble'); //on lui ajoute une id pour pouvoir y accèder
+var txt = el.dataset.descr; //on récupère le texte d'annotation à partir de l'attribut "data-set" de l'élément déclenchant l'évènement
+div.innerHTML = txt; //on ajoute le texte d'annotation à la div
+document.body.appendChild(div); //on ajoute la div au document
+}
+function bubbleout(el) { //cette fonction supprime la bulle d'annotation créée lorsque la souris ne survole plus la cellule en question
+document.body.removeChild(document.getElementById(el.id + '_bubble')); //on retire la div du document grâce à son id préalablement définie dans la fonction "bubblein()"
+}
+function bubblepos(posi) { //cette fonction gère la position de la bulle d'annotation
+var el = document.getElementsByClassName('bubble')[0]; //on récupère toutes les bulles d'annotation et on ne garde que la première (normalement il n'y en a qu'une simultanément...)
+var posX = posi.clientX + 8 + window.scrollX; //on calcule la position horizontale de la bulle au niveau du curseur de la souris + un décalage de 8px vers la droite + l'éventuel décalage causé par le scroll du document
+var posY = posi.clientY - el.offsetHeight + window.scrollY; //on calcule la position verticale de la bulle au niveau du curseur de la souris - la hauteur de notre div vers le haut + l'éventuel décalage causé par le scroll du document
+el.style.left = posX +"px"; //on modifie la position horizontale en conséquence
+el.style.top = posY +"px"; //on modifie la position verticale en conséquence
+}
+  </script></head><body onload="coords()">
+<p style="text-align: center;"> <a href="Temperatures.html"><span style="color: white;"><img style="border: 0px solid ; width: 54px; height: 54px;" alt="Icone Température" src="../../Icones/Thermometre.png"></span></a>&nbsp;&nbsp;&nbsp;
+<a href="Vent.html"><img style="border: 0px solid ; width: 70px; height: 42px;" alt="Icone Vent" src="../../Icones/Vent.png"></a>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Soleil.html"><img style="border: 0px solid ; width: 54px; height: 54px;" src="../../Icones/Soleil.png" alt="Icone Soleil"></a>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="../../index.html"><span style="text-decoration: underline;"><img style="border: 0px solid ; width: 54px; height: 54px;" alt="Icone accueil" src="../../Icones/Accueil.png"></span></a> </p>
+
+<p style="text-align: center;"><span style="color: white;">Pour voir
+les différents tableaux, cliquez sur les icônes ci-dessus.</span><br>
+</p>
+
+<p style="text-align: center;"><span style="color: white;">Pour voir
+les heures de pluie, passez la souris au dessus des cases ou il y a un
+petit
+triangle rouge.</span><br>
+</p>
+
+<div style="text-align: center;"> <img style="width: 785px; height: 1569px;" src="Tableau_Pluie.jpg" alt="Pluviométrie" usemap="#pluviomap"> <map name="pluviomap" onmousemove="bubblepos(event)">
+<!-- 1er jour --><area shape="rect" coords="0,0,0,0" id="cell_R01C03" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R01C04" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R01C05" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R01C06" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)">
+
+
+
+<!-- 2ème jour --><area shape="rect" coords="0,0,0,0" id="cell_R02C03" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R02C04" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R02C05" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R02C06" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)">
+
+
+
+<!-- 3ème jour --><area shape="rect" coords="0,0,0,0" id="cell_R03C03" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R03C04" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R03C05" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R03C06" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)">
+
+
+
+<!-- 4ème jour --><area shape="rect" coords="0,0,0,0" id="cell_R04C03" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R04C04" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R04C05" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R04C06" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)">
+
+
+
+<!-- 5ème jour --><area shape="rect" coords="0,0,0,0" id="cell_R05C03" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R05C04" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R05C05" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R05C06" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)">
+
+
+
+<!-- 6ème jour --><area shape="rect" coords="0,0,0,0" id="cell_R06C03" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R06C04" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R06C05" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R06C06" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)">
+
+
+
+<!-- 7ème jour --><area shape="rect" coords="0,0,0,0" id="cell_R07C03" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R07C04" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R07C05" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R07C06" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)">
+
+
+
+<!-- 8ème jour --><area shape="rect" coords="0,0,0,0" id="cell_R08C03" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R08C04" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R08C05" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R08C06" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)">
+
+
+
+<!-- 9ème jour --><area shape="rect" coords="0,0,0,0" id="cell_R09C03" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R09C04" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R09C05" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R09C06" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)">
+
+
+
+<!-- 10ème jour --><area shape="rect" coords="0,0,0,0" id="cell_R10C03" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R10C04" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R10C05" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R10C06" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)">
+
+
+
+<!-- 11ème jour --><area shape="rect" coords="0,0,0,0" id="cell_R11C03" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R11C04" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R11C05" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R11C06" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)">
+
+
+
+<!-- 12ème jour --><area shape="rect" coords="0,0,0,0" id="cell_R12C03" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R12C04" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R12C05" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R12C06" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)">
+
+
+
+<!-- 13ème jour --><area shape="rect" coords="0,0,0,0" id="cell_R13C03" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R13C04" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R13C05" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R13C06" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)">
+
+
+
+<!-- 14ème jour --><area shape="rect" coords="0,0,0,0" id="cell_R14C03" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R14C04" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R14C05" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R14C06" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)">
+
+
+
+<!-- 15ème jour --><area shape="rect" coords="0,0,0,0" id="cell_R15C01" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R15C02" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R15C03" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R15C04" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R15C05" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R15C06" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)">
+
+
+
+
+
+<!-- 16ème jour --><area shape="rect" coords="0,0,0,0" id="cell_R16C01" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R16C02" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R16C03" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R16C04" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R16C05" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R16C06" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)">
+
+
+
+
+
+<!-- 17ème jour --><area shape="rect" coords="0,0,0,0" id="cell_R17C01" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R17C02" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R17C03" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R17C04" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R17C05" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R17C06" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)">
+
+
+
+
+
+<!-- 18ème jour --><area shape="rect" coords="0,0,0,0" id="cell_R18C01" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R18C02" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R18C03" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R18C04" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R18C05" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R18C06" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)">
+
+
+
+
+
+<!-- 19ème jour --><area shape="rect" coords="0,0,0,0" id="cell_R19C01" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R19C02" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R19C03" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R19C04" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R19C05" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R19C06" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)">
+
+
+
+
+
+<!-- 20ème jour --><area shape="rect" coords="0,0,0,0" id="cell_R20C01" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R20C02" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R20C03" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R20C04" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R20C05" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R20C06" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)">
+
+
+
+
+
+<!-- 21ème jour --><area shape="rect" coords="0,0,0,0" id="cell_R21C01" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R21C02" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R21C03" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R21C04" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R21C05" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R21C06" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)">
+
+
+
+
+
+<!-- 22ème jour --><area shape="rect" coords="0,0,0,0" id="cell_R22C01" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R22C02" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R22C03" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R22C04" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R22C05" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R22C06" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)">
+
+
+
+
+
+<!-- 23ème jour --><area shape="rect" coords="0,0,0,0" id="cell_R23C01" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R23C02" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R23C03" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R23C04" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R23C05" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R23C06" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)">
+
+
+
+
+
+<!-- 24ème jour --><area shape="rect" coords="0,0,0,0" id="cell_R24C01" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R24C02" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R24C03" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R24C04" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R24C05" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R24C06" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)">
+
+
+
+
+
+<!-- 25ème jour --><area shape="rect" coords="0,0,0,0" id="cell_R25C01" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R25C02" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R25C03" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R25C04" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R25C05" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R25C06" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)">
+
+
+
+
+
+<!-- 26ème jour --><area shape="rect" coords="0,0,0,0" id="cell_R26C01" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R26C02" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R26C03" il="" a="" plu:="">
+
+
+<br><area shape="rect" coords="0,0,0,0" id="cell_R26C04" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R26C05" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R26C06" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)">
+
+
+
+onmouseover="bubblein(this)"
+onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"&gt;
+<!-- 27ème jour --><area shape="rect" coords="0,0,0,0" id="cell_R27C01" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R27C02" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R27C03" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R27C04" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R27C05" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R27C06" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)">
+
+
+
+
+
+<!-- 28ème jour --><area shape="rect" coords="0,0,0,0" id="cell_R28C01" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R28C02" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R28C03" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R28C04" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R28C05" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R28C06" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)">
+
+
+
+
+
+<!-- 29ème jour --><area shape="rect" coords="0,0,0,0" id="cell_R29C01" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R29C02" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R29C03" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R29C04" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R29C05" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R29C06" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)">
+
+
+
+
+
+<!-- 30ème jour --><area shape="rect" coords="0,0,0,0" id="cell_R30C01" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R30C02" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R30C03" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R30C04" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R30C05" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R30C06" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)">
+
+
+
+
+
+<!-- 31ème jour --><area shape="rect" coords="0,0,0,0" id="cell_R31C01" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R31C02" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R31C03" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R31C04" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R31C05" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R31C06" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)">
+
+
+
+
+
+</map>
+</div>
+
+</body></html>
