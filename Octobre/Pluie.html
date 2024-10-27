@@ -1,6 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html><head>
 
+
+
   
   <meta charset="UTF-8"><title>Pluie</title>
   
@@ -48,34 +50,34 @@
   
   <script type="text/javascript">
 function coords() { //cette fonction définit les coordonnées des cellules à annoter ainsi que le contenu de leur annotation
-var firstWeekLength = 6; //on définit le nombre de jours dans la première semaine du mois
+var firstWeekLength = 5; //on définit le nombre de jours dans la première semaine du mois
 var datas = { //on définit le texte à afficher pour chaque cellule
 
 /* ---1er jour--- */
 'cell_R01C03': '',
 'cell_R01C04': '',
-'cell_R01C05': 'il a plu:<br>de 15h30 à 15h48<br>de 16h44 à 17h40',
+'cell_R01C05': 'il a plu:<br>de 17h06 à 18h03',
 'cell_R01C06': '',
 /* ---2ème jour--- */
-'cell_R02C03': 'il a plu:<br>de 02h42 à 03h41',
-'cell_R02C04': 'il a plu:<br>de 10h19 à 11h41',
-'cell_R02C05': '',
-'cell_R02C06': '',
+'cell_R02C03': '',
+'cell_R02C04': '',
+'cell_R02C05': 'il a plu:<br>de 13h15 à 18h32<br>de 18h49 à 18h59',
+'cell_R02C06': 'il a plu:<br>de 19h00 à 20h57<br>de 20h59 à 23h59',
 /* ---3ème jour--- */
-'cell_R03C03': '',
-'cell_R03C04': 'il a plu:<br>de 08h33 à 09h30<br>de 10h44 à 11h39',
+'cell_R03C03': 'il a plu:<br>de 00h01 à 00h27<br>de 01h18 à 02h17<br>de 03h24 à 06h06<br>de 06h12 à 06h59',
+'cell_R03C04': 'il a plu:<br>de 07h00 à 09h06',
 'cell_R03C05': '',
 'cell_R03C06': '',
 /* ---4ème jour--- */
 'cell_R04C03': '',
 'cell_R04C04': '',
-'cell_R04C05': '',
-'cell_R04C06': '',
+'cell_R04C05': 'il a plu:<br>de 12h35 à 13h35',
+'cell_R04C06': 'il a plu:<br>de 19h21 à 20h20',
 /* ---5ème jour--- */
-'cell_R05C03': '',
-'cell_R05C04': '',
+'cell_R05C03': 'il a plu:<br>de 02h48 à 06h59',
+'cell_R05C04': 'il a plu:<br>de 07h00 à 08h29',
 'cell_R05C05': '',
-'cell_R05C06': 'il a plu:<br>de 21h29 à 22h43',
+'cell_R05C06': '',
 /* ---6ème jour--- */
 'cell_R06C03': '',
 'cell_R06C04': '',
@@ -102,8 +104,8 @@ var datas = { //on définit le texte à afficher pour chaque cellule
 'cell_R10C05': '',
 'cell_R10C06': '',
 /* ---11ème jour--- */
-'cell_R11C03': 'il a plu:<br>de 05h05 à 06h59',
-'cell_R11C04': 'il a plu:<br>de 07h00 à 09h23',
+'cell_R11C03': '',
+'cell_R11C04': '',
 'cell_R11C05': '',
 'cell_R11C06': '',
 /* ---12ème jour--- */
@@ -113,29 +115,29 @@ var datas = { //on définit le texte à afficher pour chaque cellule
 'cell_R12C06': '',
 /* ---13ème jour--- */
 'cell_R13C03': '',
-'cell_R13C04': 'il a plu:<br>de 09h42 à 11h59',
-'cell_R13C05': 'il a plu:<br>de 12h00 à 18h59',
-'cell_R13C06': 'il a plu:<br>de 19h00 à 19h35<br>de 20h34 à 22h15<br>de 23h11 à 23h59',
+'cell_R13C04': '',
+'cell_R13C05': '',
+'cell_R13C06': '',
 /* ---14ème jour--- */
-'cell_R14C03': 'il a plu:<br>de 00h00 à 00h05<br>de 02h01 à 02h55<br>de 04h16 à 05h55',
-'cell_R14C04': 'il a plu:<br>de 10h40 à 11h35',
+'cell_R14C03': '5',
+'cell_R14C04': '',
 'cell_R14C05': '',
 'cell_R14C06': '',
 /* ---15ème jour--- */
-'cell_R15C03': 'il a plu:<br>de 01h51 à 02h59<br>de 03h58 à 05h34<br>de 05h36 à 06h34',
-'cell_R15C04': 'il a plu:<br>de 07h34 à 11h54<br>de 11h57 à 11h59',
-'cell_R15C05': 'il a plu:<br>de 12h00 à 12h53<br>de 13h08 à 14h03<br>de 17h05 à 18h59',
-'cell_R15C06': 'il a plu:<br>de 19h00 à 19h03<br>de 19h50 à 22h48<br>de 22h51 à 23h48',
+'cell_R15C03': '',
+'cell_R15C04': '',
+'cell_R15C05': '',
+'cell_R15C06': '',
 /* ---16ème jour--- */
-'cell_R16C03': 'il a plu:<br>de 00h23 à 01h18',
-'cell_R16C04': 'il a plu:<br>de 08h46 à 09h43',
+'cell_R16C03': '',
+'cell_R16C04': '',
 'cell_R16C05': '',
 'cell_R16C06': '',
 /* ---17ème jour--- */
-'cell_R17C03': 'il a plu:<br>de 02h45 à 04h07<br>de 04h12 à 05h07',
+'cell_R17C03': '',
 'cell_R17C04': '',
-'cell_R17C05': 'il a plu:<br>de 13h17 à 18h26',
-'cell_R17C06': 'il a plu:<br>de 21h56 à 22h51',
+'cell_R17C05': '',
+'cell_R17C06': '',
 /* ---18ème jour--- */
 'cell_R18C03': '',
 'cell_R18C04': '',
@@ -145,16 +147,16 @@ var datas = { //on définit le texte à afficher pour chaque cellule
 'cell_R19C03': '',
 'cell_R19C04': '',
 'cell_R19C05': '',
-'cell_R19C06': 'il a plu:<br>de 23h39 à 23h59',
+'cell_R19C06': '',
 /* ---20ème jour--- */
 'cell_R20C03': '',
-'cell_R20C04': '',
-'cell_R20C05': '',
-'cell_R20C06': '',
+'cell_R20C04': 'il a plu:<br>de 07h29 à 08h29<br>de 11h11 à 11h59',
+'cell_R20C05': 'il a plu:<br>de 12h00 à 12h09',
+'cell_R20C06': 'il a plu:<br>de 20h46 à 22h24',
 /* ---21ème jour--- */
-'cell_R21C03': '',
-'cell_R21C04': '',
-'cell_R21C05': '',
+'cell_R21C03': 'il a plu:<br>de 00h24 à 02h14<br>de 06h32 à 06h59',
+'cell_R21C04': 'il a plu:<br>de 07h00 à 07h28',
+'cell_R21C05': 'il a plu:<br>de 13h14 à 14h33<br>de 16h47 à 18h13',
 'cell_R21C06': '',
 /* ---22ème jour--- */
 'cell_R22C03': '',
@@ -172,13 +174,13 @@ var datas = { //on définit le texte à afficher pour chaque cellule
 'cell_R24C05': '',
 'cell_R24C06': '',
 /* ---25ème jour--- */
-'cell_R25C03': '',
+'cell_R25C03': 'il a plu:<br>de 00h22 à 01h20',
 'cell_R25C04': '',
 'cell_R25C05': '',
-'cell_R25C06': 'il a plu:<br>de 20h32 à 21h28',
+'cell_R25C06': 'il a plu:<br>de 19h26 à 19h39',
 /* ---26ème jour--- */
-'cell_R26C03': '',
-'cell_R26C04': '',
+'cell_R26C03': 'il a plu:<br>de 06h21 à 06h59',
+'cell_R26C04': 'il a plu:<br>de 07h00 à 07h18',
 'cell_R26C05': '',
 'cell_R26C06': '',
 /* ---27ème jour--- */
@@ -193,24 +195,24 @@ var datas = { //on définit le texte à afficher pour chaque cellule
 'cell_R28C06': '',
 /* ---29ème jour--- */
 'cell_R29C03': '',
-'cell_R29C04': '',
-'cell_R29C05': '',
-'cell_R29C06': '',
+'cell_R29C04': 'il a plu:<br>de 08h18 à 09h25<br>de 10h03 à 11h05<br>de 11h13 à 11h59',
+'cell_R29C05': 'il a plu:<br>de 12h00 à 12h30',
+'cell_R29C06': 'il a plu:<br>de 21h26 à 22h25',
 /* ---30ème jour--- */
-'cell_R30C03': '',
-'cell_R30C04': 'il a plu:<br>de 09h43 à 11h59',
-'cell_R30C05': 'il a plu:<br>de 12h00 à 14h00',
+'cell_R30C03': 'il a plu:<br>de 08h44 à 11h14',
+'cell_R30C04': '',
+'cell_R30C05': '',
 'cell_R30C06': '',
 /* ---31ème jour--- */
-'cell_R31C03': '',
-'cell_R31C04': '',
+'cell_R31C03': 'il a plu:<br>de 11h27 à 11h59',
+'cell_R31C04': 'il a plu:<br>de 12h00 à 13h28',
 'cell_R31C05': '',
 'cell_R31C06': ''
 };
 var areas = document.getElementsByTagName('area'); //on récupère toutes les cellules annotées
 var width = 90; //largeur d'une cellule
 var height = 36; //hauteur d'une cellule
-var paddingX = 9; //écart horizontal entre deux cellules
+var paddingX = 7; //écart horizontal entre deux cellules
 var paddingY = 7; //écart vertical entre deux cellules
 for (var el of areas) { //pour chaque cellule
 var elid = el.id; //on récupère son id qui contient ses coordonnées sous la forme Ligne puis Colonne
@@ -261,7 +263,7 @@ el.style.left = posX +"px"; //on modifie la position horizontale en conséquence
 el.style.top = posY +"px"; //on modifie la position verticale en conséquence
 }
   </script></head><body onload="coords()">
-<p style="text-align: center;"> <small><a href="Temperatures.html"><span style="color: white;"><img style="border: 0px solid ; width: 35px; height: 54px;" alt="T°" src="../../Icones/Thermometre.png"></span></a></small>&nbsp;&nbsp;&nbsp;
+<p style="text-align: center;"> <a href="Pluie.html"><small><span style="color: white;"><img style="border: 0px solid ; width: 54px; height: 54px;" alt="T°" src="../../Icones/Thermometre.png"></span></small></a>&nbsp;&nbsp;&nbsp;
 <a href="Vent.html"><img style="border: 0px solid ; width: 70px; height: 42px;" alt="Vent" src="../../Icones/Vent.png"></a>&nbsp;&nbsp; &nbsp; <a href="Soleil.html"><img style="border: 0px solid ; width: 54px; height: 54px;" src="../../Icones/Soleil.png" alt="Soleil"></a>&nbsp;
 &nbsp;&nbsp; <a href="../../index.php"><span style="text-decoration: underline;"><img style="border: 0px solid ; width: 54px; height: 54px;" alt="Accueil" src="../../Icones/Accueil.png"></span></a> </p>
 
@@ -397,7 +399,7 @@ triangle rouge.</span></p>
 <!-- 26ème jour --><area shape="rect" coords="0,0,0,0" id="cell_R26C01" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R26C02" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R26C03" il="" a="" plu:="">
 
 
-<br><area shape="rect" coords="0,0,0,0" id="cell_R26C04" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" il="" a="" plu:="" 01h17="" 02h15="" de="" 04h17="" à="" 05h15="" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R26C05" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R26C06" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)">
+<br><area shape="rect" coords="0,0,0,0" id="cell_R26C04" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R26C05" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)"><area shape="rect" coords="0,0,0,0" id="cell_R26C06" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)">
 
 
 
