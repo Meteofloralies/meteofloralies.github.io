@@ -216,16 +216,27 @@ var height = 36;
 var paddingX = 7; 
   //écart vertical entre deux cellules
 var paddingY = 7; 
-for (var el of areas) { //pour chaque cellule
-var elid = el.id; //on récupère son id qui contient ses coordonnées sous la forme Ligne puis Colonne
-el.setAttribute('data-descr', datas[elid]); //on ajoute le texte à afficher en faisant la correspondance entre le tableau de données et l'id de la cellule
-var regex = /\d+/g; //expression régulière pour extraire les nombres contenus dans l'id de notre cellule
-var arr = elid.match(regex); //on parse l'id selon notre expression régulière
-if (arr.length > 1) { //si deux nombres sont bien trouvés (i.e. les coordonnées) car sait-on jamais peut-être que la personne n'est pas capable d'écrire correctement l'id dans le DOM HTML...
-var row = parseInt(arr[0], 10); //on convertit la chaîne de caractères correspondants au numéro de ligne en type entier naturel
-var col = parseInt(arr[1], 10); //on convertit la chaîne de caractères correspondants au numéro de colonne en type entier naturel
-var offsetX = 146; //on définit le décélage horizontale de la première cellule par rapport à gauche de l'image
-if (row < (firstWeekLength + 1)) { //on définit les décalages verticaux entre les semaines par rapport au haut de l'image, ici S1
+  //pour chaque cellule
+for (var el of areas) { 
+  //on récupère son id qui contient ses coordonnées sous la forme Ligne puis Colonne
+var elid = el.id; 
+   //on ajoute le texte à afficher en faisant la correspondance entre le tableau de données et l'id de la cellule
+el.setAttribute('data-descr', datas[elid]);
+   //expression régulière pour extraire les nombres contenus dans l'id de notre cellule
+var regex = /\d+/g;
+  //on parse l'id selon notre expression régulière
+var arr = elid.match(regex); 
+  //si deux nombres sont bien trouvés (i.e. les coordonnées) car sait-on jamais peut-être que la personne n'est pas capable d'écrire correctement l'id dans le DOM HTML...
+if (arr.length > 1) {
+  //si deux nombres sont bien trouvés (i.e. les coordonnées) car sait-on jamais peut-être que la personne n'est pas capable d'écrire correctement l'id dans le DOM HTML... 
+var row = parseInt(arr[0], 10); 
+  //on convertit la chaîne de caractères correspondants au numéro de ligne en type entier naturel
+var col = parseInt(arr[1], 10); 
+  //on convertit la chaîne de caractères correspondants au numéro de colonne en type entier naturel
+var offsetX = 146; 
+  //on définit le décélage horizontale de la première cellule par rapport à gauche de l'image
+if (row < (firstWeekLength + 1)) { 
+  //on définit les décalages verticaux entre les semaines par rapport au haut de l'image, ici S1
 var offsetY = 100;
 } else if (row < ( 7 * 1 + firstWeekLength + 1)) { //ici S2
 var offsetY = 152 + 29;
