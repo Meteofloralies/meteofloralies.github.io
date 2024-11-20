@@ -1,12 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html><head>
-  
-  <meta charset="UTF-8">
-  <title>Pluie Novembre 2024</title>
-
-  
-  
-  <style type="text/css">
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Pluie Novembre 2024</title>
+<style type="text/css">
 body {
 margin: 0px 0px 0px 0px;
 color: #000000;
@@ -43,9 +40,8 @@ border-style: solid;
 border-width: 1px 1px 1px 1px;
 border-color: #000000;
 }
-  </style>
-  
-  <script type="text/javascript">
+</style>
+<script type="text/javascript">
 function coords() { //cette fonction définit les coordonnées des cellules à annoter ainsi que le contenu de leur annotation
 var firstWeekLength = 3; //on définit le nombre de jours dans la première semaine du mois
 var datas = { //on définit le texte à afficher pour chaque cellule
@@ -221,7 +217,7 @@ var row = parseInt(arr[0], 10); //on convertit la chaîne de caractères corresp
 var col = parseInt(arr[1], 10); //on convertit la chaîne de caractères correspondants au numéro de colonne en type entier naturel
 var offsetX = 146; //on définit le décélage horizontale de la première cellule par rapport à gauche de l'image
 if (row < (firstWeekLength + 1)) { //on définit les décalages verticaux entre les semaines par rapport au haut de l'image, ici S1
-var offsetY = 100;
+var offsetY = 152;
 } else if (row < ( 7 * 1 + firstWeekLength + 1)) { //ici S2
 var offsetY = 152 + 29;
 } else if (row < ( 7 * 2 + firstWeekLength + 1)) { //ici S3
@@ -259,34 +255,41 @@ var posY = posi.clientY - el.offsetHeight + window.scrollY; //on calcule la posi
 el.style.left = posX +"px"; //on modifie la position horizontale en conséquence
 el.style.top = posY +"px"; //on modifie la position verticale en conséquence
 }
-  </script>
-  
-  <link href="../../cligne2.css" rel="stylesheet" type="text/css">
-
-</head><body onload="coords()">
-  
-<p style="text-align: center;"> 
-  <small><a href="Temperatures.html"><span style="color: white;">
-    <img style="border: 0px solid ; width: 54px; height: 54px;" alt="Thermometre" src="../../Icones/Thermometre.png"></span></a></small>
-  &nbsp;&nbsp;&nbsp;
-<a href="Vent.html">
-  <img style="border: 0px solid ; width: 70px; height: 42px;" alt="Icone Vent" src="../../Icones/Vent.png"></a>
-  &nbsp;&nbsp; &nbsp; <a href="Soleil.html"><img style="border: 0px solid ; width: 54px; height: 54px;" src="../../Icones/Soleil.png" alt="Icone Soleil"></a>&nbsp;
-&nbsp;&nbsp; <a href="../../index.html"><span style="text-decoration: underline;"><img style="border: 0px solid ; width: 54px; height: 54px;" alt="Icone accueil" src="../../Icones/Accueil.png"></span></a> </p>
-
+</script>
+<link href="../../cligne2.css" rel="stylesheet" type="text/css">
+</head>
+<body onload="coords()">
+<p style="text-align: center;"> <small><a href="Temperatures.html"><span
+style="color: white;"><img
+style="border: 0px solid ; width: 54px; height: 54px;"
+alt="Thermometre" src="../../Icones/Thermometre.png"></span></a></small>&nbsp;&nbsp;&nbsp;
+<a href="Vent.html"><img
+style="border: 0px solid ; width: 70px; height: 42px;" alt="Icone Vent"
+src="../../Icones/Vent.png"></a>&nbsp;&nbsp; &nbsp; <a
+href="Soleil.html"><img
+style="border: 0px solid ; width: 54px; height: 54px;"
+src="../../Icones/Soleil.png" alt="Icone Soleil"></a>&nbsp;
+&nbsp;&nbsp; <a href="../../index.html"><span
+style="text-decoration: underline;"><img
+style="border: 0px solid ; width: 54px; height: 54px;"
+alt="Icone accueil" src="../../Icones/Accueil.png"></span></a> </p>
 <p style="text-align: center;"><span style="color: white;">
 <a href="../../index.html"><span style="text-decoration: underline;"></span></a></span></p>
-
 <p style="text-align: center;"><span style="color: white;">
-<marquee>
-  Pour voir les différents tableaux, cliquez sur icôes ci-dessus.
-</marquee>
+<marquee>Pour
+voir
+les différents tableaux, cliquez sur icônes ci-dessus.</marquee>
 <br>
-<p class="cligne2" style="text-align: center;"><span style="color: white;">
-  Pour voir les heures de pluie, passez la souris au dessus des cases avec un petit triangle rouge (en réparation).</span>
+<p class="cligne2" style="text-align: center;"><span
+style="color: white;">Pour voir les heures de pluie, passez la souris
+au dessus des cases
+avec un petit triangle rouge.</span>
 </p>
-<div style="text-align: center;"> 
-  <img style="width: 728px; height: 1615px;" src="Tableau_pluie.jpg" alt="Pluviométrie" usemap="#pluviomap"> <map name="pluviomap" onmousemove="bubblepos(event)"></div>
+<div style="text-align: center;"> <img
+style="width: 728px; height: 1615px;"
+src="Tableau_pluie.jpg" alt="Pluviométrie"
+usemap="#pluviomap"> <map name="pluviomap"
+onmousemove="bubblepos(event)">
 
   <!-- 1er jour --><area shape="rect" coords="0,0,0,0" id="cell_R01C03" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)">
 <area shape="rect" coords="0,0,0,0" id="cell_R01C04" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)">
