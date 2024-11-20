@@ -139,12 +139,12 @@ var datas = { //on définit le texte à afficher pour chaque cellule
 'cell_R18C03': '',
 'cell_R18C04': '',
 'cell_R18C05': '',
-'cell_R18C06': '',
+'cell_R18C06': 'il a plu:<br>de 22h10 à 23h11',
 /* ---19ème jour--- */
-'cell_R19C03': '',
-'cell_R19C04': '',
-'cell_R19C05': '',
-'cell_R19C06': '',
+'cell_R19C03': 'il a plu:<br>de 02h02 à 02h53',
+'cell_R19C04': 'il a plu:<br>de 09h47 à 10h46',
+'cell_R19C05': 'il a plu:<br>de 12h51 à 12h57<br>de 12h59 à 13h45<br>de 17h19 à 18h59',
+'cell_R19C06': 'il a plu:<br>de 19h00 à 22h20',
 /* ---20ème jour--- */
 'cell_R20C03': '',
 'cell_R20C04': '',
@@ -206,38 +206,22 @@ var datas = { //on définit le texte à afficher pour chaque cellule
 'cell_R31C05': '',
 'cell_R31C06': ''
 };
-//on récupère toutes les cellules annotées  
-var areas = document.getElementsByTagName('area'); 
-  //largeur d'une cellule  
-var width = 90;
-  //hauteur d'une cellule  
-var height = 36; 
-  //écart horizontal entre deux cellules
-var paddingX = 7; 
-  //écart vertical entre deux cellules
-var paddingY = 7; 
-  //pour chaque cellule
-for (var el of areas) { 
-  //on récupère son id qui contient ses coordonnées sous la forme Ligne puis Colonne
-var elid = el.id; 
-   //on ajoute le texte à afficher en faisant la correspondance entre le tableau de données et l'id de la cellule
-el.setAttribute('data-descr', datas[elid]);
-   //expression régulière pour extraire les nombres contenus dans l'id de notre cellule
-var regex = /\d+/g;
-  //on parse l'id selon notre expression régulière
-var arr = elid.match(regex); 
-  //si deux nombres sont bien trouvés (i.e. les coordonnées) car sait-on jamais peut-être que la personne n'est pas capable d'écrire correctement l'id dans le DOM HTML...
-if (arr.length > 1) {
-  //si deux nombres sont bien trouvés (i.e. les coordonnées) car sait-on jamais peut-être que la personne n'est pas capable d'écrire correctement l'id dans le DOM HTML... 
-var row = parseInt(arr[0], 10); 
-  //on convertit la chaîne de caractères correspondants au numéro de ligne en type entier naturel
-var col = parseInt(arr[1], 10); 
-  //on convertit la chaîne de caractères correspondants au numéro de colonne en type entier naturel
-var offsetX = 146; 
-  //on définit le décélage horizontale de la première cellule par rapport à gauche de l'image
-if (row < (firstWeekLength + 1)) { 
-  //on définit les décalages verticaux entre les semaines par rapport au haut de l'image, ici S1
-var offsetY = 100;
+var areas = document.getElementsByTagName('area'); //on récupère toutes les cellules annotées
+var width = 90; //largeur d'une cellule
+var height = 36; //hauteur d'une cellule
+var paddingX = 7; //écart horizontal entre deux cellules
+var paddingY = 7; //écart vertical entre deux cellules
+for (var el of areas) { //pour chaque cellule
+var elid = el.id; //on récupère son id qui contient ses coordonnées sous la forme Ligne puis Colonne
+el.setAttribute('data-descr', datas[elid]); //on ajoute le texte à afficher en faisant la correspondance entre le tableau de données et l'id de la cellule
+var regex = /\d+/g; //expression régulière pour extraire les nombres contenus dans l'id de notre cellule
+var arr = elid.match(regex); //on parse l'id selon notre expression régulière
+if (arr.length > 1) { //si deux nombres sont bien trouvés (i.e. les coordonnées) car sait-on jamais peut-être que la personne n'est pas capable d'écrire correctement l'id dans le DOM HTML...
+var row = parseInt(arr[0], 10); //on convertit la chaîne de caractères correspondants au numéro de ligne en type entier naturel
+var col = parseInt(arr[1], 10); //on convertit la chaîne de caractères correspondants au numéro de colonne en type entier naturel
+var offsetX = 146; //on définit le décélage horizontale de la première cellule par rapport à gauche de l'image
+if (row < (firstWeekLength + 1)) { //on définit les décalages verticaux entre les semaines par rapport au haut de l'image, ici S1
+var offsetY = 152;
 } else if (row < ( 7 * 1 + firstWeekLength + 1)) { //ici S2
 var offsetY = 152 + 29;
 } else if (row < ( 7 * 2 + firstWeekLength + 1)) { //ici S3
@@ -280,20 +264,12 @@ el.style.top = posY +"px"; //on modifie la position verticale en conséquence
   <link href="../../cligne2.css" rel="stylesheet" type="text/css">
 
 </head><body onload="coords()">
-<p style="text-align: center;"> <small>
-<a href="Temperatures.html"><span style="color: white;">
-    <img style="border: 0px solid ; width: 54px; height: 54px;" alt="Thermometre" src="../../Icones/Thermometre.png"></span></a></small>
-    &nbsp;&nbsp;&nbsp;
-<a href="Vent.html">
-   <img style="border: 0px solid ; width: 70px; height: 42px;" alt="Icone Vent" src="../../Icones/Vent.png"></a>
-   &nbsp;&nbsp; &nbsp; 
-<a href="Soleil.html"><img style="border: 0px solid ; width: 54px; height: 54px;" src="../../Icones/Soleil.png" alt="Icone Soleil"></a>
-   &nbsp;&nbsp;&nbsp; 
-<a href="../../index.html"><span style="text-decoration: underline;">
-   <img style="border: 0px solid ; width: 54px; height: 54px;" alt="Icone accueil" src="../../Icones/Accueil.png"></span></a> </p>
+<p style="text-align: center;"> <small><a href="Temperatures.html"><span style="color: white;"><img style="border: 0px solid ; width: 54px; height: 54px;" alt="Thermometre" src="../../Icones/Thermometre.png"></span></a></small>&nbsp;&nbsp;&nbsp;
+<a href="Vent.html"><img style="border: 0px solid ; width: 70px; height: 42px;" alt="Icone Vent" src="../../Icones/Vent.png"></a>&nbsp;&nbsp; &nbsp; <a href="Soleil.html"><img style="border: 0px solid ; width: 54px; height: 54px;" src="../../Icones/Soleil.png" alt="Icone Soleil"></a>&nbsp;
+&nbsp;&nbsp; <a href="../../index.php"><span style="text-decoration: underline;"><img style="border: 0px solid ; width: 54px; height: 54px;" alt="Icone accueil" src="../../Icones/Accueil.png"></span></a> </p>
 
 <p style="text-align: center;"><span style="color: white;">
-<a href="../../index.html"><span style="text-decoration: underline;"></span></a></span></p>
+<a href="../../index.php"><span style="text-decoration: underline;"></span></a></span></p>
 
 <p style="text-align: center;"><span style="color: white;">
 <marquee>Pour
@@ -304,9 +280,7 @@ les différents tableaux, cliquez sur icôes ci-dessus.</marquee>
 au dessus des cases
 avec un petit triangle rouge.</span>
 </p>
-<div style="text-align: center;"> 
-  <img style="width: 728px; height: 1615px;" src="Tableau_pluie.jpg" alt="Pluviométrie" usemap="#pluviomap"> <map name="pluviomap" onmousemove="bubblepos(event)">
-
+<div style="text-align: center;"> <img style="width: 728px; height: 1615px;" src="Github_Novembre/Tableau_pluie.jpg" alt="Pluviométrie" usemap="#pluviomap"> <map name="pluviomap" onmousemove="bubblepos(event)">
 <!-- 1er jour --><area shape="rect" coords="0,0,0,0" id="cell_R01C03" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)">
 <area shape="rect" coords="0,0,0,0" id="cell_R01C04" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)">
 <area shape="rect" coords="0,0,0,0" id="cell_R01C05" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)">
