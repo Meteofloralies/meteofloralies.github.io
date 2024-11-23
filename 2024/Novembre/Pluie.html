@@ -44,12 +44,17 @@ border-width: 1px 1px 1px 1px;
 border-color: #000000;
 }
   </style>
-  
-  <script type="text/javascript">
-function coords() { //cette fonction définit les coordonnées des cellules à annoter ainsi que le contenu de leur annotation
-var firstWeekLength = 3; //on définit le nombre de jours dans la première semaine du mois
-var datas = { //on définit le texte à afficher pour chaque cellule
+<script type="text/javascript">
+ 
+//cette fonction définit les coordonnées des cellules à annoter ainsi que le contenu de leur annotation   
+function coords() { 
+ 
+var firstWeekLength = 3;
+  //on définit le nombre de jours dans la première semaine du mois 
 
+var datas = { 
+  //on définit le texte à afficher pour chaque cellule
+  
 /* ---1er jour--- */
 'cell_R01C03': '',
 'cell_R01C04': '',
@@ -206,8 +211,13 @@ var datas = { //on définit le texte à afficher pour chaque cellule
 'cell_R31C05': '',
 'cell_R31C06': ''
 };
-var areas = document.getElementsByTagName('area'); //on récupère toutes les cellules annotées
-var width = 90; //largeur d'une cellule
+ 
+//on récupère toutes les cellules annotées 
+var areas = document.getElementsByTagName('area');
+
+//largeur d'une cellule  
+var width = 90;
+
 var height = 36; //hauteur d'une cellule
 var paddingX = 7; //écart horizontal entre deux cellules
 var paddingY = 7; //écart vertical entre deux cellules
