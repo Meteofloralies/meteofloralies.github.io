@@ -213,15 +213,24 @@ border-color: #000000;
 };
  
 //on récupère toutes les cellules annotées 
-var areas = document.getElementsByTagName('area');
+  var areas = document.getElementsByTagName('area');
 
 //largeur d'une cellule  
-var width = 90;
+  var width = 90;
 
-var height = 36; //hauteur d'une cellule
-var paddingX = 7; //écart horizontal entre deux cellules
-var paddingY = 7; //écart vertical entre deux cellules
-for (var el of areas) { //pour chaque cellule
+//hauteur d'une cellule   
+  var height = 36; 
+
+//écart horizontal entre deux cellules   
+  var paddingX = 7; 
+
+//écart vertical entre deux cellules   
+  var paddingY = 7; 
+
+//pour chaque cellule   
+for (var el of areas) { 
+
+ 
 var elid = el.id; //on récupère son id qui contient ses coordonnées sous la forme Ligne puis Colonne
 el.setAttribute('data-descr', datas[elid]); //on ajoute le texte à afficher en faisant la correspondance entre le tableau de données et l'id de la cellule
 var regex = /\d+/g; //expression régulière pour extraire les nombres contenus dans l'id de notre cellule
