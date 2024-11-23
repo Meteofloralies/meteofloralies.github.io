@@ -208,7 +208,7 @@ var datas = { //on définit le texte à afficher pour chaque cellule
 };
 var areas = document.getElementsByTagName('area'); //on récupère toutes les cellules annotées
 var width = 90; //largeur d'une cellule
-var height = 30; //hauteur d'une cellule
+var height = 36; //hauteur d'une cellule
 var paddingX = 7; //écart horizontal entre deux cellules
 var paddingY = 7; //écart vertical entre deux cellules
 for (var el of areas) { //pour chaque cellule
@@ -221,7 +221,7 @@ var row = parseInt(arr[0], 10); //on convertit la chaîne de caractères corresp
 var col = parseInt(arr[1], 10); //on convertit la chaîne de caractères correspondants au numéro de colonne en type entier naturel
 var offsetX = 146; //on définit le décélage horizontale de la première cellule par rapport à gauche de l'image
 if (row < (firstWeekLength + 1)) { //on définit les décalages verticaux entre les semaines par rapport au haut de l'image, ici S1
-var offsetY = 172;
+var offsetY = 152;
 } else if (row < ( 7 * 1 + firstWeekLength + 1)) { //ici S2
 var offsetY = 152 + 29;
 } else if (row < ( 7 * 2 + firstWeekLength + 1)) { //ici S3
@@ -259,7 +259,8 @@ var posY = posi.clientY - el.offsetHeight + window.scrollY; //on calcule la posi
 el.style.left = posX +"px"; //on modifie la position horizontale en conséquence
 el.style.top = posY +"px"; //on modifie la position verticale en conséquence
 }
-  </script>
+</script>
+
   
   <link href="../../cligne2.css" rel="stylesheet" type="text/css">
 
