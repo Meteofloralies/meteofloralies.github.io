@@ -1,4 +1,4 @@
- réparation)<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+ 
 <html><head>
   
   <meta charset="UTF-8">
@@ -223,13 +223,13 @@ var offsetX = 146; //on définit le décélage horizontale de la première cellu
 if (row < (firstWeekLength + 1)) { //on définit les décalages verticaux entre les semaines par rapport au haut de l'image, ici S1
 var offsetY = 120;
 } else if (row < ( 7 * 1 + firstWeekLength + 1)) { //ici S2
-var offsetY = 162 + 29;
+var offsetY = 172 + 29;
 } else if (row < ( 7 * 2 + firstWeekLength + 1)) { //ici S3
-var offsetY = 162 + 29 * 2;
+var offsetY = 172 + 29 * 2;
 } else if (row < ( 7 * 3 + firstWeekLength + 1)) { //ici S4
-var offsetY = 162 + 29 * 3;
+var offsetY = 172 + 29 * 3;
 } else if (row < ( 7 * 4 + firstWeekLength + 1)) { //ici S5, pas envie de gérer les cas avec des mois contenant moins de 31 jours mais ça ne devrait pas poser de problème si le document est écrit correctement...
-var offsetY = 162 + 29 * 4;
+var offsetY = 172 + 29 * 4;
 } else { //sait-on jamais que la personne n'est pas capable d'écrire correctement l'id dans le DOM HTML ou ne sait pas qu'il ne peut y avoir plus de 31 jours dans un mois...
 return null;
 }
@@ -276,7 +276,7 @@ el.style.top = posY +"px"; //on modifie la position verticale en conséquence
 <marquee>Pour voir les différents tableaux, cliquez sur icônes ci-dessus.</marquee>
 <br>
 <p class="cligne2" style="text-align: center;"><span style="color: white;">
-  Pour voir les heures de pluie, passez la souris au dessus des cases avec un petit triangle rouge (en réparation).</span>
+  Pour voir les heures de pluie, passez la souris au dessus des cases avec un petit triangle rouge.</span>
 </p>
 <div style="text-align: center;"> <img style="width: 729px; height: 1609px;" src="Tableau_pluie.jpg" alt="Pluviométrie" usemap="#pluviomap"> <map name="pluviomap" onmousemove="bubblepos(event)">
   
