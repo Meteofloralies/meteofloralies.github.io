@@ -108,7 +108,7 @@ var datas = { //on définit le texte à afficher pour chaque cellule
 /* ---12ème jour--- */
 'cell_R12C03': '',
 'cell_R12C04': '',
-'cell_R12C05': '',
+'cell_R12C05': 'il a plu:<br>de 16h48 à 17h46',
 'cell_R12C06': '',
 /* ---13ème jour--- */
 'cell_R13C03': '',
@@ -223,13 +223,13 @@ var offsetX = 146; //on définit le décélage horizontale de la première cellu
 if (row < (firstWeekLength + 1)) { //on définit les décalages verticaux entre les semaines par rapport au haut de l'image, ici S1
 var offsetY = 122;
 } else if (row < ( 7 * 1 + firstWeekLength + 1)) { //ici S2
-var offsetY = 152 + 29;
+var offsetY = 122 + 29;
 } else if (row < ( 7 * 2 + firstWeekLength + 1)) { //ici S3
-var offsetY = 152 + 29 * 2;
+var offsetY = 122 + 29 * 2;
 } else if (row < ( 7 * 3 + firstWeekLength + 1)) { //ici S4
-var offsetY = 152 + 29 * 3;
+var offsetY = 122 + 29 * 3;
 } else if (row < ( 7 * 4 + firstWeekLength + 1)) { //ici S5, pas envie de gérer les cas avec des mois contenant moins de 31 jours mais ça ne devrait pas poser de problème si le document est écrit correctement...
-var offsetY = 152 + 29 * 4;
+var offsetY = 122 + 29 * 4;
 } else { //sait-on jamais que la personne n'est pas capable d'écrire correctement l'id dans le DOM HTML ou ne sait pas qu'il ne peut y avoir plus de 31 jours dans un mois...
 return null;
 }
