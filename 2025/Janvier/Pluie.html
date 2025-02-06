@@ -255,16 +255,16 @@ border-color: #000000;
 
 //on définit les décalages verticaux entre les semaines par rapport au haut de l'image, ici S1   
   if (row < (firstWeekLength + 1)) { 
-  var offsetY = 130;
+  var offsetY = 152;
 //ici S2 
   } else if (row < ( 7 * 1 + firstWeekLength + 1)) { 
-  var offsetY = 172 + 29;
+  var offsetY = 152 + 29;
 //ici S3 
   } else if (row < ( 7 * 2 + firstWeekLength + 1)) { 
-  var offsetY = 172 + 29 * 2;
+  var offsetY = 152 + 29 * 2;
 //ici S4 
   } else if (row < ( 7 * 3 + firstWeekLength + 1)) { 
-  var offsetY = 172 + 29 * 3;
+  var offsetY = 152 + 29 * 3;
 
 //ici S5, pas envie de gérer les cas avec des mois contenant moins de 31 jours mais ça ne devrait pas poser de problème si le document est écrit correctement... 
   } else if (row < ( 7 * 4 + firstWeekLength + 1)) { 
