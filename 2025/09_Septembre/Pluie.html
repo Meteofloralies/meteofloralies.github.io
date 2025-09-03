@@ -51,10 +51,10 @@ var firstWeekLength = 1; //on définit le nombre de jours dans la première sema
 var datas = { //on définit le texte à afficher pour chaque cellule
 
 /* ---1er jour--- */
-'cell_R01C03': 'il a plu:<br>de 13h16 à 14h14<br>de 15h06 à 16h04<br>de 16h49 à 17h44',
-'cell_R01C04': 'il a plu:<br>de 23h40 à 23h59',
-'cell_R01C05': '',
-'cell_R01C06': '',
+'cell_R01C03': '',
+'cell_R01C04': '',
+'cell_R01C05': 'il a plu:<br>de 13h16 à 14h14<br>de 15h06 à 16h04<br>de 16h49 à 17h44',
+'cell_R01C06': 'il a plu:<br>de 23h40 à 23h59',
 /* ---2ème jour--- */
 'cell_R02C03': 'il a plu:<br>de 00h00 à 00h49<br>de 02h25 à 03h24<br>de 03h47 à 04h49',
 'cell_R02C04': 'il a plu:<br>de 07h23 à 08h19<br>de 09h58 à 11h59',
@@ -264,7 +264,7 @@ el.style.top = posY +"px"; //on modifie la position verticale en conséquence
   <link href="../../cligne2.css" rel="stylesheet" type="text/css">
 
 </head><body onload="coords()">
-<p style="text-align: center;"> <a href="Temperatures.html"><small><span style="color: white;"><img style="border: 0px solid ; width: 54px; height: 54px;" alt="Thermometre" src="../../Icones/Thermometre.png"></span></small></a>&nbsp;&nbsp;&nbsp;
+<p style="text-align: center;"> <small><a href="Temperatures.html"><span style="color: white;"><img style="border: 0px solid ; width: 54px; height: 54px;" alt="Thermometre" src="../../Icones/Thermometre.png"></span></a></small>&nbsp;&nbsp;&nbsp;
 <a href="Vent.html"><img style="border: 0px solid ; width: 70px; height: 42px;" alt="Icone Vent" src="../../Icones/Vent.png"></a>&nbsp;&nbsp; &nbsp; <a href="Soleil.html"><img style="border: 0px solid ; width: 54px; height: 54px;" src="../../Icones/Soleil.png" alt="Icone Soleil"></a>&nbsp;
 &nbsp;&nbsp; <a href="../../index.html"><span style="text-decoration: underline;"><img style="border: 0px solid ; width: 54px; height: 54px;" alt="Icone accueil" src="../../Icones/Accueil.png"></span></a> </p>
 
@@ -280,7 +280,7 @@ les différents tableaux, cliquez sur icôes ci-dessus.</marquee>
 au dessus des cases
 avec un petit triangle rouge.</span>
 </p>
-<div style="text-align: center;">&nbsp; <img style="width: 729px; height: 1579px;" alt="Pluie" src="Tableau_pluie.jpg"><map name="pluviomap" onmousemove="bubblepos(event)">
+<div style="text-align: center;"> <img style="width: 729px; height: 1458px;" src="Tableau_pluie.jpg" alt="Pluviométrie" usemap="#pluviomap"> <map name="pluviomap" onmousemove="bubblepos(event)">
 <!-- 1er jour --><area shape="rect" coords="0,0,0,0" id="cell_R01C03" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)">
 <area shape="rect" coords="0,0,0,0" id="cell_R01C04" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)">
 <area shape="rect" coords="0,0,0,0" id="cell_R01C05" onmouseover="bubblein(this)" onmousemove="bubblepos(event)" onmouseout="bubbleout(this)">
